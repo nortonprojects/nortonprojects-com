@@ -36,7 +36,7 @@ jobs:
     - run: npm run generate
 
     - name: Deploy
-      uses: abinmn/gcp-storage-bucket-action
+      uses: abinmn/gcp-storage-bucket-action@v1.0
       with:
         service_key: ${{secrets.GOOGLE_CLOUD_SERVICE_KEY}}
         project: ${{secrets.GOOGLE_CLOUD_APP_NAME}}
