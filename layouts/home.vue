@@ -1,5 +1,6 @@
 <template>
-  <div class="main-bg lg:h-screen lg:max-h-screen max-w-screen  max-h-full">
+  <div class="lg:h-screen lg:max-h-screen max-w-screen  max-h-full">
+    <div class="main-bg absolute top-0 left-0 h-screen w-screen"></div>
     <div class="container mx-auto h-full flex flex-col">
       <nuxt />
       <BottomBar/>
@@ -41,5 +42,6 @@ html {
 .main-bg {
   background-color: #38b2ac;
   background-image: url("~assets/topography.svg");
+  z-index: -1;
 }
 </style>
